@@ -1,0 +1,6 @@
+framework module Pods_PrecoSimples {
+  umbrella header "Pods-PrecoSimples-umbrella.h"
+
+  export *
+  module * { export * }
+}

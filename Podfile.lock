@@ -1,0 +1,12 @@
+PODS:
+  - ACFloatingTextfield-Objc (1.4)
+
+DEPENDENCIES:
+  - ACFloatingTextfield-Objc (~> 1.4)
+
+SPEC CHECKSUMS:
+  ACFloatingTextfield-Objc: 4f8ad8327ac57119c901f2e6109b017cc98c3f12
+
+PODFILE CHECKSUM: be480e0504c15e70dd22cb54983d34a93e7c7d3d
+
+COCOAPODS: 1.3.0.beta.1
