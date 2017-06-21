@@ -9,10 +9,25 @@
 import UIKit
 
 class DataViewController: UIViewController {
+    
+  
+    
+    @IBOutlet weak var total: UILabel!
+    @IBOutlet weak var tableResult: UITableView!
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       let appointment = getObject()
+        
+        let myDoubleString = String(describing: appointment.toCalculate() )
+        
+        total.text = myDoubleString
+        
         
         
         
@@ -25,14 +40,25 @@ class DataViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnBack(_ sender: UIButton) {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-    */
+    
+    
+    func getObject() -> Appointment{
+        
+            var userDefaults = UserDefaults.standard
+        
+            if let data = userDefaults.object(forKey: "appointment") as? NSData {
+                let app = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as! Appointment
+                return app
+            }else{
+                return Appointment()
+        }
+    }
 
 }

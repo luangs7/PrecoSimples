@@ -10,7 +10,7 @@ import UIKit
 import ACFloatingTextfield_Objc
 
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var customercadoria: ACFloatingTextField!
     @IBOutlet weak var aliquota: ACFloatingTextField!
@@ -31,8 +31,15 @@ class FirstViewController: UIViewController {
         
         btn.layer.cornerRadius = 2
         btn.clipsToBounds = true
-
-  
+        
+        self.customercadoria.delegate = self
+        self.aliquota.delegate = self
+        self.cobranca.delegate = self
+        self.frete.delegate = self
+        self.margem.delegate = self
+        self.others.delegate = self
+        
+        
         
      
         
@@ -65,10 +72,19 @@ class FirstViewController: UIViewController {
         userDefaults.set(encodedData, forKey: "appointment")
         userDefaults.synchronize()
         
-        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "data") as! DataViewController
-        
-        self.present(viewController, animated: true, completion: nil)
+//        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "data") as! DataViewController
+//        
+//        self.present(viewController, animated: true, completion: nil)
     }
 
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let aSet = NSCharacterSet(charactersIn:"0123456789.,").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
+    }
+    
 }
 

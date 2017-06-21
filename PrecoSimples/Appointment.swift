@@ -20,13 +20,13 @@ import UIKit
 
 @objc(Appointment)
 class Appointment: NSObject, NSCoding {
-    var custoMercadoria: Double?
-    var custoServico: Double?
-    var aliquotaSimples: Double?
-    var margem: Double?
-    var fretePreco: Double?
-    var cobrancaPreco: Double?
-    var otherCost: Double?
+    var custoMercadoria: Double?=0
+    var custoServico: Double?=0
+    var aliquotaSimples: Double?=0
+    var margem: Double?=0
+    var fretePreco: Double?=0
+    var cobrancaPreco: Double?=0
+    var otherCost: Double?=0
     
     override init(){
         
