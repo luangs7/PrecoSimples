@@ -11,15 +11,13 @@ import ACFloatingTextfield_Objc
 
 
 class FirstViewController: UIViewController,UITextFieldDelegate {
-
-    @IBOutlet weak var customercadoria: ACFloatingTextField!
-    @IBOutlet weak var aliquota: ACFloatingTextField!
-    @IBOutlet weak var cobranca: ACFloatingTextField!
-    @IBOutlet weak var frete: ACFloatingTextField!
-    @IBOutlet weak var others: ACFloatingTextField!
-    @IBOutlet weak var margem: ACFloatingTextField!
-    
+    @IBOutlet weak var custoMercadoria: ACFloatingTextField!
     @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var margem: ACFloatingTextField!
+    @IBOutlet weak var others: ACFloatingTextField!
+    @IBOutlet weak var frete: ACFloatingTextField!
+    @IBOutlet weak var cobranca: ACFloatingTextField!
+    @IBOutlet weak var aliquota: ACFloatingTextField!
     
 
     
@@ -32,7 +30,7 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
         btn.layer.cornerRadius = 2
         btn.clipsToBounds = true
         
-        self.customercadoria.delegate = self
+        self.custoMercadoria.delegate = self
         self.aliquota.delegate = self
         self.cobranca.delegate = self
         self.frete.delegate = self
@@ -40,10 +38,6 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
         self.others.delegate = self
         
         
-        
-     
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +49,7 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
     @IBAction func btnSubmit(_ sender: UIButton) {
         let app = Appointment()
         
-         app.custoMercadoria = Double(customercadoria.text!)
+         app.custoMercadoria = Double(custoMercadoria.text!)
          app.aliquotaSimples = Double(aliquota.text!)
          app.cobrancaPreco = Double(cobranca.text!)
          app.fretePreco = Double(frete.text!)
