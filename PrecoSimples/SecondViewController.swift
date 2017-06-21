@@ -11,14 +11,15 @@ import ACFloatingTextfield_Objc
 
 
 class SecondViewController: UIViewController, UITextFieldDelegate {
-    
-    
-    @IBOutlet weak var custoVenda: ACFloatingTextField!
-    @IBOutlet weak var aliquota: ACFloatingTextField!
-    @IBOutlet weak var cobranca: ACFloatingTextField!
+    @IBOutlet weak var btn: UIButton!
     @IBOutlet weak var margem: ACFloatingTextField!
     @IBOutlet weak var others: ACFloatingTextField!
-    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var cobranca: ACFloatingTextField!
+    @IBOutlet weak var aliquota: ACFloatingTextField!
+    @IBOutlet weak var customercadoria: ACFloatingTextField!
+    
+    
+
     
     
     
@@ -29,12 +30,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         btn.layer.cornerRadius = 2
         btn.clipsToBounds = true
         
-        self.custoVenda.delegate = self
+        self.customercadoria.delegate = self
         self.aliquota.delegate = self
         self.cobranca.delegate = self
         self.margem.delegate = self
         self.others.delegate = self
-
+       
     
     }
 
@@ -64,10 +65,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         return string == numberFiltered
     }
 
+  
+    
     @IBAction func btnSubmit(_ sender: Any) {
+        if !(customercadoria.text?.isEmpty)! || !(aliquota.text?.isEmpty)! || !(cobranca.text?.isEmpty)! ||  !(others.text?.isEmpty)! || !(margem.text?.isEmpty)!{
         let app = Appointment()
         
-        app.custoServico = Double(custoVenda.text!)
+        app.custoServico = Double(customercadoria.text!)
         app.aliquotaSimples = Double(aliquota.text!)
         app.cobrancaPreco = Double(cobranca.text!)
         app.fretePreco = 0
@@ -75,9 +79,19 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         app.margem = Double(margem.text!)
         
         saveObject(app: app)
-
+        }else{
+            let alertController = UIAlertController(title: "Erro", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+            {
+                (result : UIAlertAction) -> Void in
+                print("You pressed OK")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
-    
+
    
 
 }

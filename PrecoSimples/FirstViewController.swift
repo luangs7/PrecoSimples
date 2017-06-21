@@ -47,6 +47,7 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
 
     
     @IBAction func btnSubmit(_ sender: UIButton) {
+        if !(custoMercadoria.text?.isEmpty)! || !(aliquota.text?.isEmpty)! || !(cobranca.text?.isEmpty)! || !(frete.text?.isEmpty)! || !(others.text?.isEmpty)! || !(margem.text?.isEmpty)!{
         let app = Appointment()
         
          app.custoMercadoria = Double(custoMercadoria.text!)
@@ -57,6 +58,17 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
          app.margem = Double(margem.text!)
         
          saveObject(app: app)
+        }else{
+            let alertController = UIAlertController(title: "Erro", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+            {
+                (result : UIAlertAction) -> Void in
+                print("You pressed OK")
+            }
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
         
     }
     
@@ -78,6 +90,31 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
         let compSepByCharInSet = string.components(separatedBy: aSet)
         let numberFiltered = compSepByCharInSet.joined(separator: "")
         return string == numberFiltered
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("TextField did begin editing method called")
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("TextField did end editing method called")
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        print("TextField should begin editing method called")
+        return true;
+    }
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        print("TextField should clear method called")
+        return true;
+    }
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        print("TextField should snd editing method called")
+        return true;
+    }
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("TextField should return method called")
+        textField.resignFirstResponder();
+        return true;
     }
     
 }
