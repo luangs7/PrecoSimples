@@ -115,12 +115,24 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func toStringPercent(number: Double) -> String{
+        do{
         var str = String(number)
         str = str + "%"
         
         return str
-        
+        }
+        catch{
+            let str = String(number)
+            var ClearStr = str.replacingOccurrences(of: ",", with: ".")
+            ClearStr = ClearStr + "%"
+            
+            return ClearStr
+        }
     }
 
-
+    func clearString(text: String) -> String{
+        var clear = text.replacingOccurrences(of: "R$", with: " ")
+        clear = clear.replacingOccurrences(of: ",", with: ".")
+        return clear
+    }
 }

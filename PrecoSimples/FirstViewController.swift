@@ -59,12 +59,12 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
         let app = Appointment()
             
          app.custoMercadoria = NumberFormatter().number(from: clearString(text: custoMercadoria.text!))?.doubleValue
-         app.aliquotaSimples = Double(aliquota.text!)
+         app.aliquotaSimples = Double(clearPercent(text: aliquota.text!))
          app.cobrancaPreco = NumberFormatter().number(from: clearString(text: cobranca.text!))?.doubleValue
          app.fretePreco = NumberFormatter().number(from: clearString(text: frete.text!))?.doubleValue
          app.otherCost = NumberFormatter().number(from: clearString(text: others.text!))?.doubleValue
-         app.margem = Double(margem.text!)
-        
+         app.margem = Double(clearPercent(text: margem.text!))
+            
          saveObject(app: app)
         }else{
             let alertController = UIAlertController(title: "Erro", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
@@ -85,6 +85,12 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
         clear = clear.replacingOccurrences(of: ",", with: ".")
         return clear
     }
+    
+    func clearPercent(text: String) -> String{
+        var clear = text.replacingOccurrences(of: ",", with: ".")
+        return clear
+    }
+    
     
     func saveObject(app: Appointment){
         let userDefaults = UserDefaults.standard

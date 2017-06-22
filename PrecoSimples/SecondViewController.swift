@@ -53,6 +53,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         return clear
     }
     
+    
+    func clearPercent(text: String) -> String{
+        var clear = text.replacingOccurrences(of: ",", with: ".")
+        return clear
+    }
+    
     func saveObject(app: Appointment){
         var userDefaults = UserDefaults.standard
         let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: app)
@@ -81,10 +87,10 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         
             
             app.custoMercadoria = NumberFormatter().number(from: clearString(text: customercadoria.text!))?.doubleValue
-            app.aliquotaSimples = Double(aliquota.text!)
+            app.aliquotaSimples = Double(clearPercent(text: aliquota.text!))
             app.cobrancaPreco = NumberFormatter().number(from: clearString(text: cobranca.text!))?.doubleValue
             app.otherCost = NumberFormatter().number(from: clearString(text: others.text!))?.doubleValue
-            app.margem = Double(margem.text!)
+            app.margem = Double(clearPercent(text: margem.text!))
             app.fretePreco = 0
 
         

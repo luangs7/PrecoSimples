@@ -26,6 +26,10 @@ class ChartViewController: UIViewController {
         super.viewDidLoad()
         appointment = getObject()
         setDataToArray(app: appointment!)
+        
+        let myDoubleString = String(format:"%.02f", (appointment?.toCalculate())! )
+        
+        total.text = myDoubleString
 
     }
 
@@ -77,7 +81,9 @@ class ChartViewController: UIViewController {
             let str = results![index].value
             let strDouble = NumberFormatter().number(from: str!)?.doubleValue
             let entry = PieChartDataEntry(value: (strDouble)!, label: results![index].title)
+            if(strDouble != 0){
             entries.append(entry)
+            }
         }
         
         // this is custom extension method. Download the code for more details.
@@ -102,15 +108,60 @@ class ChartViewController: UIViewController {
         }
         
     
-        let pieChartDataSet = PieChartDataSet(values: entries, label: "Preço Simples")
+        
+        
+        let pieChartDataSet = PieChartDataSet(values: entries, label: " ")
         pieChartDataSet.colors = colors
+        pieChartDataSet.sliceSpace = 6
+        pieChartDataSet.selectionShift = 10
 
         let data = PieChartData(dataSet: pieChartDataSet)
+    
+    
+        let formatter = DefaultValueFormatter(formatter: formatCurrency())
+        data.setValueFormatter(formatter)
+        
+        data.setValueFont(UIFont.boldSystemFont(ofSize: 11))
+        data.setValueTextColor(UIColor.black)
+        
+        
+        
         mChart.data = data
         mChart.noDataText = "No data available"
         // user interaction
         mChart.isUserInteractionEnabled = true
         
+        let textColor = UIColor.black
+
+    
+        let center = NSMutableAttributedString()
+        let numberText = NSMutableAttributedString(string: "TOTAL \n" , attributes: [NSForegroundColorAttributeName:textColor,NSFontAttributeName: UIFont.boldSystemFont(ofSize: 10)])
+        let descriptionText = NSMutableAttributedString(string: "R$", attributes: [NSForegroundColorAttributeName:textColor,NSFontAttributeName: UIFont.boldSystemFont(ofSize: 10)])
+        
+        let valueText = NSMutableAttributedString(string: String(format:"%.02f", (appointment?.toCalculate())! ), attributes: [NSForegroundColorAttributeName:textColor,NSFontAttributeName: UIFont.boldSystemFont(ofSize: 22)])
+
+        center.append(numberText)
+        center.append(descriptionText)
+        center.append(valueText)
+        mChart.centerAttributedText = center
+    
+    }
+    
+    func formatCurrency() -> NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 2;
+        formatter.locale = Locale(identifier: Locale.current.identifier)
+        return formatter
+//        let result = formatter.string(from: value as NSNumber);
+//        return result!;
     }
 
+    @IBAction func btnBack(_ sender: Any) {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }

@@ -240,6 +240,7 @@
                                         <state key="normal" title="&lt; Back"/>
                                         <connections>
                                             <action selector="btnBack:" destination="XDk-dd-nXS" eventType="touchUpInside" id="a2n-10-0uL"/>
+                                            <action selector="btnBack:" destination="2W6-TH-lgw" eventType="touchUpInside" id="erP-0l-lRY"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Simples" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNn-pV-6dx">
