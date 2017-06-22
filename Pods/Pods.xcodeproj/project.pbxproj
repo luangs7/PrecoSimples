@@ -7,49 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CDF3379E62BF4A48E881E7FD63A3EE9 /* Pods-PrecoSimples-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD28A6F5E59879A8774D3B8912399E7A /* Pods-PrecoSimples-dummy.m */; };
-		5331513ADAEE5E97896DD71013304D2B /* ACFloatingTextfield-Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FE2C9EF28E4C0204B4ACC76CBEC947 /* ACFloatingTextfield-Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8313D890A9CEA68A12D39FEE507BA27D /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F43A74539AB876161B23A0DBCA6AB74 /* ACFloatingTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2C40666483299A2F72D4726E8981D88A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2F122C7F3FD6674AA19E2E786B8C05A9 /* VMaskTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E34B8523D20123709C036F1F57486CF9 /* VMaskTextField.bundle */; };
+		3E98BE46BC8BF586EF22CFACD8514453 /* Pods-PrecoSimples-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD28A6F5E59879A8774D3B8912399E7A /* Pods-PrecoSimples-dummy.m */; };
+		442CB00329E63B8ECD718E4CF8E1DB96 /* VMaskEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 913140B24ADF88C27ADBEFFC623CE0CC /* VMaskEditor.m */; };
+		4733591082F465FE465530A5A9943CCA /* Pods-PrecoSimples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C37BBED471B89E3ECF7A959B1507781 /* Pods-PrecoSimples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FBABD456AB8F5C06792BFCA5EAE0525 /* VMaskTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C212579C344B1A1D246715C4EA0405 /* VMaskTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5331513ADAEE5E97896DD71013304D2B /* ACFloatingTextfield-Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA36C60BA06F9CD7AFED197D7613ED82 /* ACFloatingTextfield-Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C6E254A4A41FB30DB01FF6FE6589917 /* VMaskTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17DB81B8B861E0CE24FDE177EF0DD23C /* VMaskTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B348AB784A2970F0EDFC58339347EC0 /* VMaskTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24C33F82E990F13EB218B165C9C7B4 /* VMaskTextField-dummy.m */; };
+		8313D890A9CEA68A12D39FEE507BA27D /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 997750BB91CE003EF90B95C9F2144825 /* ACFloatingTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9A650E3F036EBA65964E895AD31F7043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A169A2367F8E93C809669557B5C83401 /* ACFloatingTextfield-Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 660025315FEC558B7322F334AAF2E9B1 /* ACFloatingTextfield-Objc-dummy.m */; };
-		C61E823DC9CA44A63EC64BEF5FD207B2 /* ACFloatingTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A99118335C3A8A758C5CB8E6F657364 /* ACFloatingTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7A1BFAAFF1959A792219F45510E9922 /* Pods-PrecoSimples-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C37BBED471B89E3ECF7A959B1507781 /* Pods-PrecoSimples-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD697C0F91CC42B0C72EAA12126AD136 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A169A2367F8E93C809669557B5C83401 /* ACFloatingTextfield-Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF2A383AEB262C38E62355D0B7EC73C /* ACFloatingTextfield-Objc-dummy.m */; };
+		B049F514EAE63546A01D9706D228ADB3 /* VMaskEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = FD72E254C8C803B898E1B66CC6998D6E /* VMaskEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C61E823DC9CA44A63EC64BEF5FD207B2 /* ACFloatingTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD128AD0998080C95D2E402B02243A8 /* ACFloatingTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF6A2FBC508FDD3383BA6C41F7ADF85F /* VMaskTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EA57FC9833D18D7EFF7087BF7BFE7 /* VMaskTextField.m */; };
+		E8B1C425DAB5F7C7EA7C1A13EEC9005A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7ED282AA3D1DE5C0B35FD6651354204F /* PBXContainerItemProxy */ = {
+		2B71BB7D424AD782AAE4D022FA204B63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBA92532D4BA23D50BE04B59C82C7DFF;
+			remoteInfo = VMaskTextField;
+		};
+		909DBA23CFB8D88579E233D957311962 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C338205427316180219BE02AD7F36420;
 			remoteInfo = "ACFloatingTextfield-Objc";
 		};
+		FD8F0B84EE46D333FC32F371A2847AC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB09A8FC009588C1E7FE444E00FC56CB;
+			remoteInfo = "VMaskTextField-VMaskTextField";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04FE2C9EF28E4C0204B4ACC76CBEC947 /* ACFloatingTextfield-Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Objc-umbrella.h"; sourceTree = "<group>"; };
-		1FA4C52AB8DBCD48BDF555A7F09F1408 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28D91F97EAC2AA2E19D5D0AB737F0A51 /* ACFloatingTextfield-Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Objc-prefix.pch"; sourceTree = "<group>"; };
-		2A99118335C3A8A758C5CB8E6F657364 /* ACFloatingTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACFloatingTextField.h; path = "Source-Objc/ACFloatingTextField.h"; sourceTree = "<group>"; };
+		03FEC299A38D3FCB2F5196869C62D9DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146D432BB78F49A29FDDFCB864376B73 /* ACFloatingTextfield-Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ACFloatingTextfield-Objc.modulemap"; sourceTree = "<group>"; };
+		14DC79C233D45007C257E6EE64B7081E /* VMaskTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VMaskTextField.framework; path = VMaskTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DB81B8B861E0CE24FDE177EF0DD23C /* VMaskTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-umbrella.h"; sourceTree = "<group>"; };
+		1BF2A383AEB262C38E62355D0B7EC73C /* ACFloatingTextfield-Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACFloatingTextfield-Objc-dummy.m"; sourceTree = "<group>"; };
 		36AC973065A7ADAA14B956838BF12E0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF326833C165D690BE25FD8D2B1600B /* Pods-PrecoSimples-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrecoSimples-frameworks.sh"; sourceTree = "<group>"; };
+		47C212579C344B1A1D246715C4EA0405 /* VMaskTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskTextField.h; path = Pod/Classes/VMaskTextField.h; sourceTree = "<group>"; };
 		4C37BBED471B89E3ECF7A959B1507781 /* Pods-PrecoSimples-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrecoSimples-umbrella.h"; sourceTree = "<group>"; };
-		4F43A74539AB876161B23A0DBCA6AB74 /* ACFloatingTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACFloatingTextField.m; path = "Source-Objc/ACFloatingTextField.m"; sourceTree = "<group>"; };
-		5407BCDFA97A3760FA2D5FCAB301B278 /* ACFloatingTextfield_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACFloatingTextfield_Objc.framework; path = "ACFloatingTextfield-Objc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822DE9F6785A527F0C83EE271AD9F12 /* Pods-PrecoSimples-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrecoSimples-acknowledgements.markdown"; sourceTree = "<group>"; };
-		660025315FEC558B7322F334AAF2E9B1 /* ACFloatingTextfield-Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACFloatingTextfield-Objc-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B63AD4081A6B96FB8804D9DFF1B0ADE /* ACFloatingTextfield_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACFloatingTextfield_Objc.framework; path = "ACFloatingTextfield-Objc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8415B6BDDA996FAE4349FA0549DCE878 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87AC721A4D3631929763617C1CBBD795 /* Pods-PrecoSimples.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PrecoSimples.modulemap"; sourceTree = "<group>"; };
+		8D5EA57FC9833D18D7EFF7087BF7BFE7 /* VMaskTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskTextField.m; path = Pod/Classes/VMaskTextField.m; sourceTree = "<group>"; };
+		913140B24ADF88C27ADBEFFC623CE0CC /* VMaskEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VMaskEditor.m; path = Pod/Classes/VMaskEditor.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97DA1433899CFEE07BB5DD625FDF1F57 /* ACFloatingTextfield-Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Objc-prefix.pch"; sourceTree = "<group>"; };
+		997750BB91CE003EF90B95C9F2144825 /* ACFloatingTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACFloatingTextField.m; path = "Source-Objc/ACFloatingTextField.m"; sourceTree = "<group>"; };
+		9AD6E87B74E485D1DF7422C5C952FD73 /* Pods_PrecoSimples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrecoSimples.framework; path = "Pods-PrecoSimples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDBF5DF990412581C57D995C1E7957E /* Pods-PrecoSimples-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrecoSimples-resources.sh"; sourceTree = "<group>"; };
+		AE51CA97F0B1745550D2BF290B1F6E3E /* VMaskTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VMaskTextField.modulemap; sourceTree = "<group>"; };
 		BD28A6F5E59879A8774D3B8912399E7A /* Pods-PrecoSimples-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrecoSimples-dummy.m"; sourceTree = "<group>"; };
-		C8D415ECF61AC8F83BEB328DFF9EE712 /* ACFloatingTextfield-Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACFloatingTextfield-Objc.xcconfig"; sourceTree = "<group>"; };
+		C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VMaskTextField.xcconfig; sourceTree = "<group>"; };
+		C4951E3EDC692C239C70E2F5A05E02BB /* ResourceBundle-VMaskTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-VMaskTextField-Info.plist"; sourceTree = "<group>"; };
+		C6EC2D519E23F944E338433B1EB896BE /* VMaskTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VMaskTextField-prefix.pch"; sourceTree = "<group>"; };
 		CCCE0106B15801250498919CB088F4DC /* Pods-PrecoSimples-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrecoSimples-acknowledgements.plist"; sourceTree = "<group>"; };
-		CEBDC9E3ACE16F308B50DE215D4DE25F /* Pods_PrecoSimples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PrecoSimples.framework; path = "Pods-PrecoSimples.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD128AD0998080C95D2E402B02243A8 /* ACFloatingTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACFloatingTextField.h; path = "Source-Objc/ACFloatingTextField.h"; sourceTree = "<group>"; };
+		D05F35C4842ECE874D5A914232A4804B /* ACFloatingTextfield-Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ACFloatingTextfield-Objc.xcconfig"; sourceTree = "<group>"; };
 		D29D0CEF1472AC0C046E1FF1B24659C1 /* Pods-PrecoSimples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrecoSimples.debug.xcconfig"; sourceTree = "<group>"; };
+		E34B8523D20123709C036F1F57486CF9 /* VMaskTextField.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = VMaskTextField.bundle; path = VMaskTextField.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38BA0B2C335C54928A766D8D7FEECAE /* Pods-PrecoSimples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrecoSimples.release.xcconfig"; sourceTree = "<group>"; };
-		FE38E4C5BC1744EDEC7FD0A460BAC6E3 /* ACFloatingTextfield-Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ACFloatingTextfield-Objc.modulemap"; sourceTree = "<group>"; };
+		FA36C60BA06F9CD7AFED197D7613ED82 /* ACFloatingTextfield-Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACFloatingTextfield-Objc-umbrella.h"; sourceTree = "<group>"; };
+		FD72E254C8C803B898E1B66CC6998D6E /* VMaskEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VMaskEditor.h; path = Pod/Classes/VMaskEditor.h; sourceTree = "<group>"; };
+		FE24C33F82E990F13EB218B165C9C7B4 /* VMaskTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VMaskTextField-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +96,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C86471F59868E16DEA0B346F8D0CFBD4 /* Frameworks */ = {
+		5A58CBFF8ADD3B2EA833207213BE727A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD697C0F91CC42B0C72EAA12126AD136 /* Foundation.framework in Frameworks */,
+				E8B1C425DAB5F7C7EA7C1A13EEC9005A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DA8347140AE9B94C183BE5E51AB70D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6697843005B0DA57868C8277650A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C40666483299A2F72D4726E8981D88A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D21274AA5CCB36DBB4556A1404A998 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8415B6BDDA996FAE4349FA0549DCE878 /* Info.plist */,
+				C4951E3EDC692C239C70E2F5A05E02BB /* ResourceBundle-VMaskTextField-Info.plist */,
+				AE51CA97F0B1745550D2BF290B1F6E3E /* VMaskTextField.modulemap */,
+				C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */,
+				FE24C33F82E990F13EB218B165C9C7B4 /* VMaskTextField-dummy.m */,
+				C6EC2D519E23F944E338433B1EB896BE /* VMaskTextField-prefix.pch */,
+				17DB81B8B861E0CE24FDE177EF0DD23C /* VMaskTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VMaskTextField";
+			sourceTree = "<group>";
+		};
 		09B101E0DB14C5D18A21E61858C6C229 /* Pods-PrecoSimples */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +155,15 @@
 			path = "Target Support Files/Pods-PrecoSimples";
 			sourceTree = "<group>";
 		};
+		0E225588A326697DD82354583C481EB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76AE3FF8C442E9840E3E3C3329B6996C /* ACFloatingTextfield-Objc */,
+				AB819497F86626E12730E566AD47A644 /* VMaskTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		276C816105CDC3CB6AAA32349AE3D76F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,20 +172,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4E5771AA98D130683FD541E4D8798900 /* Pods */ = {
+		6C7EB68031B039B2D07B8789BFCDB09C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58B44BB7FA1AB911E9BB43ED2A1CBAE4 /* ACFloatingTextfield-Objc */,
+				6B63AD4081A6B96FB8804D9DFF1B0ADE /* ACFloatingTextfield_Objc.framework */,
+				9AD6E87B74E485D1DF7422C5C952FD73 /* Pods_PrecoSimples.framework */,
+				E34B8523D20123709C036F1F57486CF9 /* VMaskTextField.bundle */,
+				14DC79C233D45007C257E6EE64B7081E /* VMaskTextField.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		58B44BB7FA1AB911E9BB43ED2A1CBAE4 /* ACFloatingTextfield-Objc */ = {
+		76AE3FF8C442E9840E3E3C3329B6996C /* ACFloatingTextfield-Objc */ = {
 			isa = PBXGroup;
 			children = (
-				2A99118335C3A8A758C5CB8E6F657364 /* ACFloatingTextField.h */,
-				4F43A74539AB876161B23A0DBCA6AB74 /* ACFloatingTextField.m */,
-				B0509D07266D7E5E5A9B2F2B9F1090AC /* Support Files */,
+				CFD128AD0998080C95D2E402B02243A8 /* ACFloatingTextField.h */,
+				997750BB91CE003EF90B95C9F2144825 /* ACFloatingTextField.m */,
+				8831E00A7F7ED722CB8A4F0EB3A15F23 /* Support Files */,
 			);
 			name = "ACFloatingTextfield-Objc";
 			path = "ACFloatingTextfield-Objc";
@@ -122,33 +199,37 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4E5771AA98D130683FD541E4D8798900 /* Pods */,
-				B747CD4ADA5A7AC72EC361365689295D /* Products */,
+				0E225588A326697DD82354583C481EB5 /* Pods */,
+				6C7EB68031B039B2D07B8789BFCDB09C /* Products */,
 				276C816105CDC3CB6AAA32349AE3D76F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B0509D07266D7E5E5A9B2F2B9F1090AC /* Support Files */ = {
+		8831E00A7F7ED722CB8A4F0EB3A15F23 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE38E4C5BC1744EDEC7FD0A460BAC6E3 /* ACFloatingTextfield-Objc.modulemap */,
-				C8D415ECF61AC8F83BEB328DFF9EE712 /* ACFloatingTextfield-Objc.xcconfig */,
-				660025315FEC558B7322F334AAF2E9B1 /* ACFloatingTextfield-Objc-dummy.m */,
-				28D91F97EAC2AA2E19D5D0AB737F0A51 /* ACFloatingTextfield-Objc-prefix.pch */,
-				04FE2C9EF28E4C0204B4ACC76CBEC947 /* ACFloatingTextfield-Objc-umbrella.h */,
-				1FA4C52AB8DBCD48BDF555A7F09F1408 /* Info.plist */,
+				146D432BB78F49A29FDDFCB864376B73 /* ACFloatingTextfield-Objc.modulemap */,
+				D05F35C4842ECE874D5A914232A4804B /* ACFloatingTextfield-Objc.xcconfig */,
+				1BF2A383AEB262C38E62355D0B7EC73C /* ACFloatingTextfield-Objc-dummy.m */,
+				97DA1433899CFEE07BB5DD625FDF1F57 /* ACFloatingTextfield-Objc-prefix.pch */,
+				FA36C60BA06F9CD7AFED197D7613ED82 /* ACFloatingTextfield-Objc-umbrella.h */,
+				03FEC299A38D3FCB2F5196869C62D9DD /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ACFloatingTextfield-Objc";
 			sourceTree = "<group>";
 		};
-		B747CD4ADA5A7AC72EC361365689295D /* Products */ = {
+		AB819497F86626E12730E566AD47A644 /* VMaskTextField */ = {
 			isa = PBXGroup;
 			children = (
-				5407BCDFA97A3760FA2D5FCAB301B278 /* ACFloatingTextfield_Objc.framework */,
-				CEBDC9E3ACE16F308B50DE215D4DE25F /* Pods_PrecoSimples.framework */,
+				FD72E254C8C803B898E1B66CC6998D6E /* VMaskEditor.h */,
+				913140B24ADF88C27ADBEFFC623CE0CC /* VMaskEditor.m */,
+				47C212579C344B1A1D246715C4EA0405 /* VMaskTextField.h */,
+				8D5EA57FC9833D18D7EFF7087BF7BFE7 /* VMaskTextField.m */,
+				03D21274AA5CCB36DBB4556A1404A998 /* Support Files */,
 			);
-			name = Products;
+			name = VMaskTextField;
+			path = VMaskTextField;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -170,14 +251,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B07B9AED6A1778B69AA60E660934802 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7A1BFAAFF1959A792219F45510E9922 /* Pods-PrecoSimples-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		17DBC14077637DA8A2792AD24665E30D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,25 +260,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71522C105B5B340352D19857CEE5138D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4733591082F465FE465530A5A9943CCA /* Pods-PrecoSimples-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A392834521750A6E99B421FC7ED13C6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B049F514EAE63546A01D9706D228ADB3 /* VMaskEditor.h in Headers */,
+				6C6E254A4A41FB30DB01FF6FE6589917 /* VMaskTextField-umbrella.h in Headers */,
+				4FBABD456AB8F5C06792BFCA5EAE0525 /* VMaskTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B522FFCE0100C6EE6A033FDD9319286A /* Pods-PrecoSimples */ = {
+		17C285E1AE9B5DAB16DD6BF8509A72A4 /* Pods-PrecoSimples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 132B371B9857CBA6A257573FE64EAF0C /* Build configuration list for PBXNativeTarget "Pods-PrecoSimples" */;
+			buildConfigurationList = 6F3D7DC9A7DFF0E05CACD5108EA5E07F /* Build configuration list for PBXNativeTarget "Pods-PrecoSimples" */;
 			buildPhases = (
-				77A7BC32C70AB42735315AD43559D460 /* Sources */,
-				C86471F59868E16DEA0B346F8D0CFBD4 /* Frameworks */,
-				0B07B9AED6A1778B69AA60E660934802 /* Headers */,
+				FE39AA74EE61B20D1D84AEF66ACFF944 /* Sources */,
+				BF6697843005B0DA57868C8277650A6A /* Frameworks */,
+				71522C105B5B340352D19857CEE5138D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B946104AFFA4B83106988CD6D35BC3A8 /* PBXTargetDependency */,
+				14C155746165380C490F5489B4A53C69 /* PBXTargetDependency */,
+				8BACA392F2EA17A11087091B0FBB9201 /* PBXTargetDependency */,
 			);
 			name = "Pods-PrecoSimples";
 			productName = "Pods-PrecoSimples";
-			productReference = CEBDC9E3ACE16F308B50DE215D4DE25F /* Pods_PrecoSimples.framework */;
+			productReference = 9AD6E87B74E485D1DF7422C5C952FD73 /* Pods_PrecoSimples.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C338205427316180219BE02AD7F36420 /* ACFloatingTextfield-Objc */ = {
@@ -222,8 +314,44 @@
 			);
 			name = "ACFloatingTextfield-Objc";
 			productName = "ACFloatingTextfield-Objc";
-			productReference = 5407BCDFA97A3760FA2D5FCAB301B278 /* ACFloatingTextfield_Objc.framework */;
+			productReference = 6B63AD4081A6B96FB8804D9DFF1B0ADE /* ACFloatingTextfield_Objc.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		CBA92532D4BA23D50BE04B59C82C7DFF /* VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71492F129A5A7F4E62EFCE99FBDBCF3C /* Build configuration list for PBXNativeTarget "VMaskTextField" */;
+			buildPhases = (
+				60EE04D4B0E26C3E8CCD68F097962383 /* Sources */,
+				5A58CBFF8ADD3B2EA833207213BE727A /* Frameworks */,
+				6E623EB9813982DD622BFF35484736D7 /* Resources */,
+				A392834521750A6E99B421FC7ED13C6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E2C3B0A815470481154C575F02B0532 /* PBXTargetDependency */,
+			);
+			name = VMaskTextField;
+			productName = VMaskTextField;
+			productReference = 14DC79C233D45007C257E6EE64B7081E /* VMaskTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB09A8FC009588C1E7FE444E00FC56CB /* VMaskTextField-VMaskTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0273A3947FE4C1FC3309050410E5E3D /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */;
+			buildPhases = (
+				0F9516B1E5175AD11290DE8AAE7F3BEB /* Sources */,
+				6DA8347140AE9B94C183BE5E51AB70D1 /* Frameworks */,
+				DAE8F7096F3782233B65D903D9DB02B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VMaskTextField-VMaskTextField";
+			productName = "VMaskTextField-VMaskTextField";
+			productReference = E34B8523D20123709C036F1F57486CF9 /* VMaskTextField.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -242,17 +370,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B747CD4ADA5A7AC72EC361365689295D /* Products */;
+			productRefGroup = 6C7EB68031B039B2D07B8789BFCDB09C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C338205427316180219BE02AD7F36420 /* ACFloatingTextfield-Objc */,
-				B522FFCE0100C6EE6A033FDD9319286A /* Pods-PrecoSimples */,
+				17C285E1AE9B5DAB16DD6BF8509A72A4 /* Pods-PrecoSimples */,
+				CBA92532D4BA23D50BE04B59C82C7DFF /* VMaskTextField */,
+				FB09A8FC009588C1E7FE444E00FC56CB /* VMaskTextField-VMaskTextField */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6E623EB9813982DD622BFF35484736D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F122C7F3FD6674AA19E2E786B8C05A9 /* VMaskTextField.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE8F7096F3782233B65D903D9DB02B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0F9516B1E5175AD11290DE8AAE7F3BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5409737CDAEC647A2AB3435EFCE59B11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,22 +417,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77A7BC32C70AB42735315AD43559D460 /* Sources */ = {
+		60EE04D4B0E26C3E8CCD68F097962383 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDF3379E62BF4A48E881E7FD63A3EE9 /* Pods-PrecoSimples-dummy.m in Sources */,
+				442CB00329E63B8ECD718E4CF8E1DB96 /* VMaskEditor.m in Sources */,
+				7B348AB784A2970F0EDFC58339347EC0 /* VMaskTextField-dummy.m in Sources */,
+				CF6A2FBC508FDD3383BA6C41F7ADF85F /* VMaskTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE39AA74EE61B20D1D84AEF66ACFF944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E98BE46BC8BF586EF22CFACD8514453 /* Pods-PrecoSimples-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B946104AFFA4B83106988CD6D35BC3A8 /* PBXTargetDependency */ = {
+		14C155746165380C490F5489B4A53C69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ACFloatingTextfield-Objc";
 			target = C338205427316180219BE02AD7F36420 /* ACFloatingTextfield-Objc */;
-			targetProxy = 7ED282AA3D1DE5C0B35FD6651354204F /* PBXContainerItemProxy */;
+			targetProxy = 909DBA23CFB8D88579E233D957311962 /* PBXContainerItemProxy */;
+		};
+		1E2C3B0A815470481154C575F02B0532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VMaskTextField-VMaskTextField";
+			target = FB09A8FC009588C1E7FE444E00FC56CB /* VMaskTextField-VMaskTextField */;
+			targetProxy = FD8F0B84EE46D333FC32F371A2847AC4 /* PBXContainerItemProxy */;
+		};
+		8BACA392F2EA17A11087091B0FBB9201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VMaskTextField;
+			target = CBA92532D4BA23D50BE04B59C82C7DFF /* VMaskTextField */;
+			targetProxy = 2B71BB7D424AD782AAE4D022FA204B63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -331,6 +508,76 @@
 			};
 			name = Debug;
 		};
+		245B5B0AB21195ED23528CC70A832114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29D0CEF1472AC0C046E1FF1B24659C1 /* Pods-PrecoSimples.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PrecoSimples/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrecoSimples/Pods-PrecoSimples.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PrecoSimples;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3147B9DB9934907AA45C20342D4881EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -375,9 +622,26 @@
 			};
 			name = Release;
 		};
+		49725490FD9C716ECF652013F69BE82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		5DAC8189106849F506B825CE74136DD7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8D415ECF61AC8F83BEB328DFF9EE712 /* ACFloatingTextfield-Objc.xcconfig */;
+			baseConfigurationReference = D05F35C4842ECE874D5A914232A4804B /* ACFloatingTextfield-Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -409,45 +673,9 @@
 			};
 			name = Release;
 		};
-		69A2EF0ED2439B2AC9995000C9B2FE45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D29D0CEF1472AC0C046E1FF1B24659C1 /* Pods-PrecoSimples.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PrecoSimples/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PrecoSimples/Pods-PrecoSimples.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PrecoSimples;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9126A7D192A1A4A2EDF7D980E11518FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8D415ECF61AC8F83BEB328DFF9EE712 /* ACFloatingTextfield-Objc.xcconfig */;
+			baseConfigurationReference = D05F35C4842ECE874D5A914232A4804B /* ACFloatingTextfield-Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -479,7 +707,58 @@
 			};
 			name = Debug;
 		};
-		AB5C524F7688855286D6D001750AA510 /* Release */ = {
+		E4453EC4C1D02EC4D21F5C46B22B0ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VMaskTextField";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/ResourceBundle-VMaskTextField-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EA0732E26759DE2025B2D3CFD8A1BB47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12E66BDE50304AB467766D1D914E7F1 /* VMaskTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VMaskTextField/VMaskTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VMaskTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VMaskTextField/VMaskTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VMaskTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD48D2D925C30B2489B2E9B0FD9DAEA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E38BA0B2C335C54928A766D8D7FEECAE /* Pods-PrecoSimples.release.xcconfig */;
 			buildSettings = {
@@ -518,20 +797,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		132B371B9857CBA6A257573FE64EAF0C /* Build configuration list for PBXNativeTarget "Pods-PrecoSimples" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69A2EF0ED2439B2AC9995000C9B2FE45 /* Debug */,
-				AB5C524F7688855286D6D001750AA510 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
 				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3D7DC9A7DFF0E05CACD5108EA5E07F /* Build configuration list for PBXNativeTarget "Pods-PrecoSimples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245B5B0AB21195ED23528CC70A832114 /* Debug */,
+				FD48D2D925C30B2489B2E9B0FD9DAEA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71492F129A5A7F4E62EFCE99FBDBCF3C /* Build configuration list for PBXNativeTarget "VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3147B9DB9934907AA45C20342D4881EC /* Debug */,
+				EA0732E26759DE2025B2D3CFD8A1BB47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0273A3947FE4C1FC3309050410E5E3D /* Build configuration list for PBXNativeTarget "VMaskTextField-VMaskTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4453EC4C1D02EC4D21F5C46B22B0ADC /* Debug */,
+				49725490FD9C716ECF652013F69BE82E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

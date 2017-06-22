@@ -11,6 +11,7 @@
 		0F0D8BF71EF99F0A001D1AAF /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BF61EF99F0A001D1AAF /* Appointment.swift */; };
 		0F0D8BF91EF9AEE5001D1AAF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BF81EF9AEE5001D1AAF /* DataViewController.swift */; };
 		0F0D8BFB1EFAB149001D1AAF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BFA1EFAB149001D1AAF /* Result.swift */; };
+		0F0D8BFD1EFBEF37001D1AAF /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */; };
 		0F94F1AC1EF94F7B0008AF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AB1EF94F7B0008AF8D /* AppDelegate.swift */; };
 		0F94F1AE1EF94F7B0008AF8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AD1EF94F7B0008AF8D /* FirstViewController.swift */; };
 		0F94F1B01EF94F7B0008AF8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AF1EF94F7B0008AF8D /* SecondViewController.swift */; };
@@ -25,6 +26,7 @@
 		0F0D8BF61EF99F0A001D1AAF /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		0F0D8BF81EF9AEE5001D1AAF /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		0F0D8BFA1EFAB149001D1AAF /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
 		0F94F1A81EF94F7B0008AF8D /* PrecoSimples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrecoSimples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F94F1AB1EF94F7B0008AF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F94F1AD1EF94F7B0008AF8D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				0F94F1B91EF94F7B0008AF8D /* Info.plist */,
 				0F0D8BF31EF98A3F001D1AAF /* kTextFiledPlaceHolder.swift */,
 				0F0D8BF81EF9AEE5001D1AAF /* DataViewController.swift */,
+				0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */,
 			);
 			path = PrecoSimples;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				0F94F1B01EF94F7B0008AF8D /* SecondViewController.swift in Sources */,
 				0F0D8BF41EF98A3F001D1AAF /* kTextFiledPlaceHolder.swift in Sources */,
 				0F94F1AC1EF94F7B0008AF8D /* AppDelegate.swift in Sources */,
+				0F0D8BFD1EFBEF37001D1AAF /* BaseViewCell.swift in Sources */,
 				0F94F1AE1EF94F7B0008AF8D /* FirstViewController.swift in Sources */,
 				0F0D8BFB1EFAB149001D1AAF /* Result.swift in Sources */,
 				0F0D8BF91EF9AEE5001D1AAF /* DataViewController.swift in Sources */,

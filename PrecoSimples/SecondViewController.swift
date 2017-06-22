@@ -18,13 +18,17 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var aliquota: ACFloatingTextField!
     @IBOutlet weak var customercadoria: ACFloatingTextField!
     
-    
+    var storeValue : NSMutableString = ""
+
 
     
     
     
 
     override func viewDidLoad() {
+        storeValue = NSMutableString()
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
         super.viewDidLoad()
 
         btn.layer.cornerRadius = 2
@@ -36,7 +40,10 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         self.margem.delegate = self
         self.others.delegate = self
        
-    
+        customercadoria.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+        cobranca.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+        others.addTarget(self, action: #selector(myTextFieldDidChange), for: .editingChanged)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +51,11 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    func clearString(text: String) -> String{
+        var clear = text.replacingOccurrences(of: "R$", with: " ")
+        clear = clear.replacingOccurrences(of: ",", with: ".")
+        return clear
+    }
     
     func saveObject(app: Appointment){
         var userDefaults = UserDefaults.standard
@@ -71,12 +83,14 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         if !(customercadoria.text?.isEmpty)! || !(aliquota.text?.isEmpty)! || !(cobranca.text?.isEmpty)! ||  !(others.text?.isEmpty)! || !(margem.text?.isEmpty)!{
         let app = Appointment()
         
-        app.custoServico = Double(customercadoria.text!)
-        app.aliquotaSimples = Double(aliquota.text!)
-        app.cobrancaPreco = Double(cobranca.text!)
-        app.fretePreco = 0
-        app.otherCost = Double(others.text!)
-        app.margem = Double(margem.text!)
+            
+            app.custoMercadoria = NumberFormatter().number(from: clearString(text: customercadoria.text!))?.doubleValue
+            app.aliquotaSimples = Double(aliquota.text!)
+            app.cobrancaPreco = NumberFormatter().number(from: clearString(text: cobranca.text!))?.doubleValue
+            app.otherCost = NumberFormatter().number(from: clearString(text: others.text!))?.doubleValue
+            app.margem = Double(margem.text!)
+            app.fretePreco = 0
+
         
         saveObject(app: app)
         }else{
@@ -93,6 +107,46 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
 
    
+    
+    func myTextFieldDidChange(_ textField: ACFloatingTextField) {
+        
+        if let amountString = textField.text?.currencyInputFormatting() {
+            textField.text = amountString
+        }
+    }
+}
+
+    extension String {
+        
+        // formatting text for currency textField
+        func currencyInputFormatting() -> String {
+            
+            var number: NSNumber!
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currencyAccounting
+            formatter.currencySymbol = "R$"
+            formatter.maximumFractionDigits = 2
+            formatter.minimumFractionDigits = 2
+            
+            var amountWithPrefix = self
+            
+            // remove from String: "$", ".", ","
+            let regex = try! NSRegularExpression(pattern: "[^0-9]", options: .caseInsensitive)
+            amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.characters.count), withTemplate: "")
+            
+            let double = (amountWithPrefix as NSString).doubleValue
+            number = NSNumber(value: (double / 100))
+            
+            // if first number is 0 or all numbers were deleted
+            guard number != 0 as NSNumber else {
+                return "R$00.00"
+            }
+            
+            return formatter.string(from: number)!
+        }
+
+    
 
 }
+
 
