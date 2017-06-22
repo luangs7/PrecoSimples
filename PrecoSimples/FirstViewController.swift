@@ -82,7 +82,7 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
     
     func clearString(text: String) -> String{
         var clear = text.replacingOccurrences(of: "R$", with: " ")
-        clear = text.replacingOccurrences(of: ",", with: ".")
+        clear = clear.replacingOccurrences(of: ",", with: ".")
         return clear
     }
     

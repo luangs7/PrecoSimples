@@ -6,5 +6,6 @@ target 'PrecoSimples' do
   use_frameworks!
     	 pod "VMaskTextField"
    	 pod 'ACFloatingTextfield-Objc', '~> 1.4'
+	 pod 'Charts'
 
 end

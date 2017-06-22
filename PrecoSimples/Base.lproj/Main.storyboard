@@ -160,7 +160,7 @@
         <!--GRÁFICO-->
         <scene sceneID="mr7-IG-TxC">
             <objects>
-                <viewController id="2W6-TH-lgw" sceneMemberID="viewController">
+                <viewController id="2W6-TH-lgw" customClass="ChartViewController" customModule="PrecoSimples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rde-tN-ddm"/>
                         <viewControllerLayoutGuide type="bottom" id="W66-Jy-9pq"/>
@@ -250,6 +250,11 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNV-RG-CUF" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="165" width="375" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -271,6 +276,11 @@
                     <tabBarItem key="tabBarItem" title="GRÁFICO" id="HOE-15-nsG">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-16"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="back" destination="Nzf-80-xKF" id="lGz-Rl-Oez"/>
+                        <outlet property="mChart" destination="cNV-RG-CUF" id="ey9-Pt-VsU"/>
+                        <outlet property="total" destination="pWK-oA-QBR" id="HId-gt-Rz5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIw-dL-2An" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

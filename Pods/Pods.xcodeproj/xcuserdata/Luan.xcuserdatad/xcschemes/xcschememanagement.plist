@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PrecoSimples.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17C285E1AE9B5DAB16DD6BF8509A72A4</key>
+		<key>15DD19C8631A17D1FDADBD4BD2D1D15C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FFE0977E204FC4E8341796E4B2F30DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95F6D02B1EBEFB17DED8F9CB673DC025</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBA92532D4BA23D50BE04B59C82C7DFF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB09A8FC009588C1E7FE444E00FC56CB</key>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>
