@@ -27,6 +27,7 @@ class Appointment: NSObject, NSCoding {
     var fretePreco: Double?=0
     var cobrancaPreco: Double?=0
     var otherCost: Double?=0
+    var option: String?=""
     
     override init(){
         
@@ -42,7 +43,8 @@ class Appointment: NSObject, NSCoding {
         self.fretePreco = aDecoder.decodeObject(forKey: "fretePreco") as? Double
         self.cobrancaPreco = aDecoder.decodeObject(forKey: "cobrancaPreco") as? Double
         self.otherCost = aDecoder.decodeObject(forKey: "otherCost") as? Double
-        
+        self.option = aDecoder.decodeObject(forKey: "option") as? String
+
     }
     
     func encode(with aCoder: NSCoder){
@@ -53,6 +55,8 @@ class Appointment: NSObject, NSCoding {
         aCoder.encode(self.fretePreco, forKey: "fretePreco")
         aCoder.encode(self.cobrancaPreco, forKey: "cobrancaPreco")
         aCoder.encode(self.otherCost, forKey: "otherCost")
+        aCoder.encode(self.option, forKey: "option")
+
     }
     
     func toCalculate() -> Double{

@@ -37,7 +37,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnSubmit:" destination="9pv-A4-QxB" eventType="touchUpInside" id="wta-Ih-sxj"/>
-                                    <segue destination="Kh0-Xh-ueo" kind="show" id="O4e-lW-mY7"/>
+                                    <segue destination="Kh0-Xh-ueo" kind="show" identifier="pass" id="O4e-lW-mY7"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="KOI-tl-8V4" userLabel="Stack View Main">
@@ -595,7 +595,7 @@
                                 <connections>
                                     <action selector="btnSubmit:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="LgX-q5-0Oq"/>
                                     <action selector="btnSubmit:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vUx-Xk-J0o"/>
-                                    <segue destination="Kh0-Xh-ueo" kind="show" id="kol-Li-kXP"/>
+                                    <segue destination="Kh0-Xh-ueo" kind="show" identifier="pass" id="kol-Li-kXP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -658,6 +658,6 @@
         <image name="second" width="13" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O4e-lW-mY7"/>
+        <segue reference="kol-Li-kXP"/>
     </inferredMetricsTieBreakers>
 </document>

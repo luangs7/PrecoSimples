@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519831278.332857"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/Appointment.swift"
-            timestampString = "519675929.019364"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "ruleOfThree(number:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/Appointment.swift"
-            timestampString = "519676313.590163"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "convert(number:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/DataViewController.swift"
-            timestampString = "519828355.735252"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519833727.636859"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "btnSubmit(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/DataViewController.swift"
-            timestampString = "519829302.839595"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/DataViewController.swift"
-            timestampString = "519829432.159657"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/DataViewController.swift"
-            timestampString = "519850735.388036"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "toStringPercent(number:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -231,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519850735.388036"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "currencyInputFormatting()"
             landmarkType = "7">
          </BreakpointContent>
@@ -247,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519850735.388036"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "currencyInputFormatting()"
             landmarkType = "7">
          </BreakpointContent>
@@ -263,11 +263,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/DataViewController.swift"
-            timestampString = "519831954.692024"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -279,11 +279,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519833727.636859"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "btnSubmit(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -295,11 +295,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519833727.636859"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "btnSubmit(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -311,11 +311,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519850735.388036"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "FirstViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -327,11 +327,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/FirstViewController.swift"
-            timestampString = "519834136.88269"
+            timestampString = "519855446.961452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "clearString(text:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -343,11 +343,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/ChartViewController.swift"
-            timestampString = "519852665.523109"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "generateChart()"
             landmarkType = "7">
          </BreakpointContent>
@@ -359,11 +359,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/ChartViewController.swift"
-            timestampString = "519851764.84556"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "generateChart()"
             landmarkType = "7">
          </BreakpointContent>
@@ -387,16 +387,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PrecoSimples/ChartViewController.swift"
-            timestampString = "519850213.227677"
+            timestampString = "519853458.623967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PrecoSimples.ChartViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "PrecoSimples"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuario/Squarebits/PrecoSimples/PrecoSimples/ChartViewController.swift"
+                  timestampString = "519854079.419175"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "318">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PrecoSimples.ChartViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "PrecoSimples"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usuario/Squarebits/PrecoSimples/PrecoSimples/ChartViewController.swift"
+                  timestampString = "519854079.422288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1019">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PrecoSimples/FirstViewController.swift"
+            timestampString = "519855446.961452"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "saveObject(app:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -20,7 +20,8 @@ class ChartViewController: UIViewController {
     var appointment : Appointment?
     var results : [Result]? = []
     var chart : PieChartView?
-    
+    var option: String?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +53,7 @@ class ChartViewController: UIViewController {
     
     func setDataToArray(app: Appointment){
         
-        results?.append(Result(title: "Custo da mercadoria", percent: " ", value: toString(number: app.custoMercadoria!)))
+        results?.append(Result(title: app.option!, percent: " ", value: toString(number: app.custoMercadoria!)))
         results?.append(Result(title: "Aliquota simples", percent: toStringPercent(number: app.aliquotaSimples!), value: toString(number: Double(app.ruleOfThree(number: app.aliquotaSimples!)))))
         results?.append(Result(title: "Cobrança", percent: " ", value: toString(number: app.cobrancaPreco!)))
         results?.append(Result(title: "Frete", percent: " ", value: toString(number: app.fretePreco!)))

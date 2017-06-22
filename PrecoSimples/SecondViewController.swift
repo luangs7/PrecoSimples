@@ -19,7 +19,8 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var customercadoria: ACFloatingTextField!
     
     var storeValue : NSMutableString = ""
-
+    var mainVC: DataViewController?
+    var chartVC: ChartViewController?
 
     override func viewDidLoad() {
         storeValue = NSMutableString()
@@ -65,6 +66,8 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         userDefaults.set(encodedData, forKey: "appointment")
         userDefaults.synchronize()
         
+    
+        
         //        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "data") as! DataViewController
         //
         //        self.present(viewController, animated: true, completion: nil)
@@ -92,9 +95,9 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             app.otherCost = NumberFormatter().number(from: clearString(text: others.text!))?.doubleValue
             app.margem = Double(clearPercent(text: margem.text!))
             app.fretePreco = 0
-
+            app.option = "Custo de serviço"
         
-        saveObject(app: app)
+            saveObject(app: app)
         }else{
             let alertController = UIAlertController(title: "Erro", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
             

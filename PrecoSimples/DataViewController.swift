@@ -16,6 +16,8 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableResult: UITableView!
     
     var results : [Result]? = []
+    var option: String = "Custo da mercadoria"
+    
     
     
 
@@ -65,7 +67,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func setDataToArray(app: Appointment){
         
-        results?.append(Result(title: "Custo da mercadoria", percent: " ", value: toString(number: app.custoMercadoria!)))
+        results?.append(Result(title: app.option!, percent: " ", value: toString(number: app.custoMercadoria!)))
         results?.append(Result(title: "Aliquota simples", percent: toStringPercent(number: app.aliquotaSimples!), value: toString(number: Double(app.ruleOfThree(number: app.aliquotaSimples!)))))
         results?.append(Result(title: "Cobrança", percent: " ", value: toString(number: app.cobrancaPreco!)))
         results?.append(Result(title: "Frete", percent: " ", value: toString(number: app.fretePreco!)))

@@ -20,7 +20,8 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var aliquota: ACFloatingTextField!
     
     var storeValue : NSMutableString = ""
-
+    var mainVC: DataViewController?
+    var chartVC: ChartViewController?
 
     
     override func viewDidLoad() {
@@ -64,8 +65,13 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
          app.fretePreco = NumberFormatter().number(from: clearString(text: frete.text!))?.doubleValue
          app.otherCost = NumberFormatter().number(from: clearString(text: others.text!))?.doubleValue
          app.margem = Double(clearPercent(text: margem.text!))
+         app.option = "Custo da mercadoria"
             
          saveObject(app: app)
+            
+        
+            
+            
         }else{
             let alertController = UIAlertController(title: "Erro", message: "Todos os campos devem ser preenchidos", preferredStyle: UIAlertControllerStyle.alert)
             
@@ -93,10 +99,14 @@ class FirstViewController: UIViewController,UITextFieldDelegate {
     
     
     func saveObject(app: Appointment){
+       
+        
+        
         let userDefaults = UserDefaults.standard
         let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: app)
         userDefaults.set(encodedData, forKey: "appointment")
         userDefaults.synchronize()
+        
         
 //        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "data") as! DataViewController
 //        
