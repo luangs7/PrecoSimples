@@ -14,6 +14,7 @@
 		0F0D8BFD1EFBEF37001D1AAF /* BaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */; };
 		0F0D8BFF1EFC0DF3001D1AAF /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8BFE1EFC0DF3001D1AAF /* ChartViewController.swift */; };
 		0F0D8C011EFC3D5E001D1AAF /* MyValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8C001EFC3D5E001D1AAF /* MyValueFormatter.swift */; };
+		0F0D8C091EFC639E001D1AAF /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D8C081EFC639E001D1AAF /* BarViewController.swift */; };
 		0F94F1AC1EF94F7B0008AF8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AB1EF94F7B0008AF8D /* AppDelegate.swift */; };
 		0F94F1AE1EF94F7B0008AF8D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AD1EF94F7B0008AF8D /* FirstViewController.swift */; };
 		0F94F1B01EF94F7B0008AF8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94F1AF1EF94F7B0008AF8D /* SecondViewController.swift */; };
@@ -31,6 +32,7 @@
 		0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewCell.swift; sourceTree = "<group>"; };
 		0F0D8BFE1EFC0DF3001D1AAF /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		0F0D8C001EFC3D5E001D1AAF /* MyValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyValueFormatter.swift; sourceTree = "<group>"; };
+		0F0D8C081EFC639E001D1AAF /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		0F94F1A81EF94F7B0008AF8D /* PrecoSimples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrecoSimples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F94F1AB1EF94F7B0008AF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F94F1AD1EF94F7B0008AF8D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				0F0D8BF81EF9AEE5001D1AAF /* DataViewController.swift */,
 				0F0D8BFC1EFBEF37001D1AAF /* BaseViewCell.swift */,
 				0F0D8BFE1EFC0DF3001D1AAF /* ChartViewController.swift */,
+				0F0D8C081EFC639E001D1AAF /* BarViewController.swift */,
 			);
 			path = PrecoSimples;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				0F94F1AE1EF94F7B0008AF8D /* FirstViewController.swift in Sources */,
 				0F0D8BFF1EFC0DF3001D1AAF /* ChartViewController.swift in Sources */,
 				0F0D8BFB1EFAB149001D1AAF /* Result.swift in Sources */,
+				0F0D8C091EFC639E001D1AAF /* BarViewController.swift in Sources */,
 				0F0D8BF91EF9AEE5001D1AAF /* DataViewController.swift in Sources */,
 				0F0D8BF71EF99F0A001D1AAF /* Appointment.swift in Sources */,
 			);
@@ -376,6 +380,7 @@
 			baseConfigurationReference = E644BB0566192A203EBA6385 /* Pods-PrecoSimples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PrecoSimples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,6 +395,7 @@
 			baseConfigurationReference = 3BB2451A5155D5F36ADC5AFB /* Pods-PrecoSimples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PrecoSimples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

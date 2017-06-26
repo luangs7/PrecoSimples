@@ -18,8 +18,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     var results : [Result]? = []
     var option: String = "Custo da mercadoria"
     
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,11 +65,15 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func setDataToArray(app: Appointment){
+        let isEqual = (app.option == "Custo da mercadoria")
         
         results?.append(Result(title: app.option!, percent: " ", value: toString(number: app.custoMercadoria!)))
         results?.append(Result(title: "Aliquota simples", percent: toStringPercent(number: app.aliquotaSimples!), value: toString(number: Double(app.ruleOfThree(number: app.aliquotaSimples!)))))
         results?.append(Result(title: "Cobrança", percent: " ", value: toString(number: app.cobrancaPreco!)))
-        results?.append(Result(title: "Frete", percent: " ", value: toString(number: app.fretePreco!)))
+        if isEqual
+        {
+            results?.append(Result(title: "Frete", percent: " ", value: toString(number: app.fretePreco!)))
+        }
         results?.append(Result(title: "Outros custos", percent: " ", value: toString(number: app.otherCost!)))
         results?.append(Result(title: "Margem esperada", percent: toStringPercent(number: app.margem!), value: toString(number: Double(app.ruleOfThree(number: app.margem!)))))
 
