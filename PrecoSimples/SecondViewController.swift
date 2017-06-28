@@ -50,13 +50,23 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
 
     func clearString(text: String) -> String{
         var clear = text.replacingOccurrences(of: "R$", with: " ")
-        clear = clear.replacingOccurrences(of: ",", with: ".")
+        if((clear.range(of: ",")) != nil){
+            clear = clear.replacingOccurrences(of: ",", with: ".")
+        }
+        
+        
+        if let idx = clear.range(of: ".", options: .backwards) {
+            clear = clear.replacingOccurrences(of: ".", with: "", range: clear.startIndex..<idx.lowerBound)
+        }
+        
         return clear
     }
     
-    
     func clearPercent(text: String) -> String{
         var clear = text.replacingOccurrences(of: ",", with: ".")
+        if let idx = clear.range(of: ".", options: .backwards) {
+            clear = clear.replacingOccurrences(of: ".", with: "", range: clear.startIndex..<idx.lowerBound)
+        }
         return clear
     }
     
@@ -79,7 +89,15 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         let aSet = NSCharacterSet(charactersIn:"0123456789.,").inverted
         let compSepByCharInSet = string.components(separatedBy: aSet)
         let numberFiltered = compSepByCharInSet.joined(separator: "")
-        return string == numberFiltered
+        
+        guard let text = textField.text else { return true }
+        let newLength = text.characters.count + string.characters.count - range.length
+        if(string == numberFiltered && newLength <= 13){
+            return true
+        }
+        else{
+            return false
+        }
     }
 
   

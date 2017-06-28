@@ -34,6 +34,11 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
         total.text = myDoubleString
         
         
+        let limit : String? = "-0.00"
+        if(myDoubleString.contains("-")){
+            alert(mensage: "Há algo errado com seus dados. Tente novamente.")
+            
+        }
         
     }
 
@@ -139,5 +144,23 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
         var clear = text.replacingOccurrences(of: "R$", with: " ")
         clear = clear.replacingOccurrences(of: ",", with: ".")
         return clear
+    }
+    
+    
+    func alert(mensage: String){
+        let alertController = UIAlertController(title: "Erro", message: mensage, preferredStyle: UIAlertControllerStyle.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default)
+        {
+            (result : UIAlertAction) -> Void in
+            print("You pressed OK")
+            if let nav = self.navigationController {
+                nav.popViewController(animated: true)
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }

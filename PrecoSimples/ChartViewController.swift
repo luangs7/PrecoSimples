@@ -115,6 +115,7 @@ class ChartViewController: UIViewController {
         pieChartDataSet.colors = colors
         pieChartDataSet.sliceSpace = 6
         pieChartDataSet.selectionShift = 10
+        
 
         let data = PieChartData(dataSet: pieChartDataSet)
     
@@ -125,10 +126,11 @@ class ChartViewController: UIViewController {
         data.setValueFont(UIFont.boldSystemFont(ofSize: 11))
         data.setValueTextColor(UIColor.black)
         
-        
+    
         
         mChart.data = data
-        mChart.noDataText = "No data available"
+
+        mChart.noDataText = "Gráfico indisponível."
         // user interaction
         mChart.isUserInteractionEnabled = true
         

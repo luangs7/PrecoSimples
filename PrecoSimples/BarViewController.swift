@@ -15,7 +15,8 @@ class BarViewController: UITabBarController {
 
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: hexStringToUIColor(hex: "#85c044")], for:.selected)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: hexStringToUIColor(hex: "#e4e1dd")], for:.normal)
-
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName:UIFont(name: "Verdana", size: 10)!], for:.selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName:UIFont(name: "Verdana", size: 11)!], for:.normal)
         
         
 
